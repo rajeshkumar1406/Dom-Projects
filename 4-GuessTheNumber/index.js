@@ -1,6 +1,4 @@
-// ab random number k liye apn math.random ka use krte h 
 
-// console.log(parseInt(Math.random()*100+1));
 
 let randomNumber= parseInt(Math.random()*100+1);
 
@@ -18,18 +16,17 @@ const startOver = document.querySelector('.resultParas');
 
 const p = document.createElement('p');
 
-let prevGuess = [] // ye ek array hoga jb koi value use krege to uske dikhana h ki phle use kr chuke 
-let numGuess = 1 // start with 1 and then end with 10 
+let prevGuess = []  
+let numGuess = 1 
 
-let playGame = true // jb bhi aise game design krege tb vo apn ko allow krta h game khlene k liye 
+let playGame = true 
 
 
-// sbse phle checking that you are able to play or not 
 if(playGame){
     submit.addEventListener('click', function(e){
-        e.preventDefault() // iska mtlb h ki value ko server pr na jane dena
-        const guess=parseInt(userInput.value) //isse apn guess k tor pr value input kr rhe h interger m 
-        validateGuess(guess) //or yha pr next k tor pr isme pass kr diya 
+        e.preventDefault() 
+        const guess=parseInt(userInput.value)  
+        validateGuess(guess) 
     })
 }
 
