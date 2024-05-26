@@ -30,7 +30,7 @@ if(playGame){
     })
 }
 
-// phla fucntion for validate guess 
+
 function validateGuess(guess){
     if(isNaN(guess)){
         alert('please enter a valid number')
@@ -52,7 +52,6 @@ function validateGuess(guess){
 }
 
 
-// yha pr message print krege or check krege 
 function checkGuess(guess){
     if(guess ===randomNumber){
         displayMessage(`you guess right`)
@@ -64,7 +63,7 @@ function checkGuess(guess){
     }
 }
 
-// ye ek tor se clean up method h 
+
 function displayguess(guess){
     userInput.value= ''
     guessSlot.innerHTML += `${guess}  `
@@ -72,7 +71,7 @@ function displayguess(guess){
     remaining.innerHTML = `${11-numGuess}`
 }
 
-// yha pr message ko display kr dege 
+
 function displayMessage(message){
     lowOrHI.innerHTML=`<h2> ${message}</h2>`
 
